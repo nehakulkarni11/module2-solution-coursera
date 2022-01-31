@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+.categories {
+    text-align: center;
+    width: 130px;
+    padding: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.2em;
+}
+
+#title1 {
+    background-color: #d59898;
+    border: 1px solid black;
+}
+
+#title2 {
+    background-color: #c14543;
+    border: 1px solid black;
+    color: white;
+}
+
+#title3 {
+    background-color: #e5d198;
+    border: 1px solid black;
+}
+
+.text {
+    margin-top: 2.3em;
+}
+
+@media screen and (min-width: 992px) {
+    .box {
+        background-color: #999999;
+        padding: 0.7em 1em;
+        padding-top: 0;
+        border: 1px solid black;
+        position: relative;
+        width: 30%;
+        display: inline-block;
+    }
+
+    #box1 {
+        margin-left: 2.5%;
+        float: left;
+    }
+
+    #box2 {
+        margin: 0 2.5%;
+    }
+
+    #box3 {
+        margin-right: 2.5%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .box {
+        background-color: #999999;
+        padding: 0.7em 1em;
+        padding-top: 0;
+        border: 1px solid black;
+        position: relative;
+        display: inline-block;
+        width: 46.25%;
+    }
+
+    #box1 {
+        margin-left: 2.5%;
+        float: left;
+    }
+
+    #box2 {
+        margin-right: 2.5%;
+        float: right;
+    }
+
+    #box3 {
+        width: 95%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        background-color: #999999;
+        padding: 0.7em 1em;
+        padding-top: 0;
+        border: 1px solid black;
+        position: relative;
+        display: block;
+        margin: 3.5% auto;
+        width: 90%;
+    }
+}
